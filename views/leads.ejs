@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Лиды</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/customers.css">
+    <link rel="stylesheet" href="/navigation.css">
+  </head>
+  <body>
+    <div class="pageHeader">
+      <ul class="topNavigation onlyDesktop">
+        <li><a class="topNavigation__link topNavigation__link--active">Новые клиенты</a></li>
+        <li><a href="/my" class="topNavigation__link">Мои клиенты</a></li>
+        <li><a href="#" class="topNavigation__link">Продажи</a></li>
+        <li><a href="#" class="topNavigation__link">Отказы</a></li>
+        <li><a href="#" class="topNavigation__link">История</a></li>
+      </ul>
+      <ul class="topNavigation onlyMobile">
+        <li><a href="/" class="topNavigation__link" style="float:right">История</a></li>
+      </ul>
+    </div>
+    
+    <div class="list">
+        <h1 class="pageTitle">Новые клиенты</h1>
+        <% leads.forEach( lead => { %>
+          <div class="row lead">
+              <div class="col callbackButton"></div>
+              <div class="col">
+                  <div class="name"><%= lead.name %></div>
+                  <div class="row info">
+                    <span class="missed"><%= lead.missed %> пропущенных</span>
+                </div>
+              </div>
+              <div class="col callbackButton saveButton"></div>
+          </div>
+        <%  }); %>      
+    </div>
+    
+    <ul class="bottomMenu onlyMobile">
+      <li><a class="bottomMenu__link bottomMenu__link--active">Новые</a></li>
+      <li><a href="/my" class="bottomMenu__link">Мои клиенты</a></li>
+      <li><a href="#" class="bottomMenu__link">Закрытые</a></li>
+    </ul>
+  </body>
+</html>

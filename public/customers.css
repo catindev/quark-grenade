@@ -1,0 +1,61 @@
+.list {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.pageTitle {
+  padding: 7px;
+}
+
+.lead {
+  border-spacing: 7px;
+}
+
+.callbackButton {
+  width: 50px;
+  background: url(https://cdn.glitch.com/ad00917f-6e7f-4e02-be9e-1e86b9a7f371%2Fcallback-icon.svg?1502294671905) no-repeat top center;
+}
+
+.saveButton {
+  width: 50px;
+  background: url(https://cdn.glitch.com/ad00917f-6e7f-4e02-be9e-1e86b9a7f371%2Fadd-icon.svg?1502295567677) no-repeat top center;
+/*   display: none; */
+}
+
+.funnelDownButton {
+  width: 50px;
+  background: url(https://cdn.glitch.com/ad00917f-6e7f-4e02-be9e-1e86b9a7f371%2Ffunnel-down-icon.svg?1502295936104) no-repeat top center;
+}
+
+.name {
+  font-size: 20px;
+  padding-bottom: .5rem;
+  word-wrap: break-word;
+}
+
+.info {
+  border-spacing: 0;
+  padding-bottom: .5rem;
+  font-size: 15px;
+  color: #666;
+}
+
+.missed {
+  font-size: 13px;
+  color: #000;
+  background-color: #FFD1C6;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+@media screen and (min-width:1024px) {
+  
+  .list {
+    margin: 0 auto;
+    width: 500px;
+  }
+  
+  .saveButton {
+    display: table-cell;
+  }
+}
